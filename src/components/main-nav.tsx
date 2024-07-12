@@ -27,9 +27,9 @@ export const NavigationBar = () => {
             </section>
         </main>
         {isToggled && <div className="flex justify-center flex-col sm:hidden">
-            <Button variant={"ghost"}>Kontakt</Button>
-            <Button variant={"ghost"}>Cennik</Button>
-            <Button variant={"ghost"}>Kontakt</Button>
+            <Button variant={"ghost"} onClick={() => push("/")}>O nas</Button>
+            <Button variant={"ghost"} onClick={() => push("/pricing")}>Cennik</Button>
+            <Button variant={"ghost"} onClick={() => push("/contact")}>Kontakt</Button>
         </div>}
     </>)
 }
