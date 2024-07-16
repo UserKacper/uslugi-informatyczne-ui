@@ -1,22 +1,26 @@
 'use client'
 import React, { useEffect, useState } from 'react'
 import { Button } from './ui/button'
-import { useRouter } from 'next/navigation'
+import { useRouter, useSearchParams } from 'next/navigation'
 
-const ServicesOptions = ({ query }: { query: string | null }) => {
-  const [selectedOption, setSelectedOption] = useState<null | string>(query)
+const ServicesOptions = () => {
+  const [selectedOption, setSelectedOption] = useState<null | string>()
+
   const { push } = useRouter()
 
+  const query = useSearchParams()
+  const queryParam = query.get('plan');
+
   const plans = [
-    { name: 'SEO', id: 0, route: "seo" },
+    { name: 'Aplikacje Mobilne', id: 0, route: "mobile" },
     { name: 'Strony Statyczne', id: 1, route: "static" },
-    { name: 'Oprogramowanie', id: 2, route: "software" },
-    { name: 'Aplikacje Mobilne', id: 3, route: "mobile" }
+    { name: 'Strony Dynamiczne', id: 3, route: "dynamic" },
+    { name: 'Oprogramowanie', id: 2, route: "software" }
   ]
 
   useEffect(() => {
-    setSelectedOption(query)
-  }, [query])
+    setSelectedOption(queryParam)
+  }, [queryParam])
 
   return (<>
     <section className='w-full sm:h-[100px]'>
