@@ -12,7 +12,7 @@ const ServicesOptions = () => {
   const queryParam = query.get('plan');
 
   const plans = [
-    { name: 'Aplikacje Mobilne', id: 0, route: "mobile" },
+    { name: 'Smart Home', id: 0, route: "smart" },
     { name: 'Strony Statyczne', id: 1, route: "static" },
     { name: 'Strony Dynamiczne', id: 3, route: "dynamic" },
     { name: 'Oprogramowanie', id: 2, route: "software" }
