@@ -35,7 +35,7 @@ export const ServiceCard = () => {
                     <React.Fragment key={data.id}>
                         <div className="w-full max-w-xs p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
                             <h5 className="mb-4 text-xl font-medium text-gray-500 dark:text-gray-400 ">{data.fullName}</h5>
-                            <div className="flex items-baseline text-gray-900 dark:text-white gap-6 font-bold">From
+                            <div className="flex items-baseline text-gray-900 dark:text-white gap-6 font-bold">Od
                                 <span className="text-3xl font-extrabold tracking-tight">{data?.pricingMin + " "}
                                     <span className="text-2xl font-semibold">{data?.pricingCurrency}</span>
                                 </span>
