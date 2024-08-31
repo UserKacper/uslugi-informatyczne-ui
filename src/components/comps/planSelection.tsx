@@ -15,7 +15,7 @@ export const PlanSelection = () => {
 
     const selectedPath = useParams()
 
-    
+
     useEffect(() => {
         setSelectedOption(selectedPath.plan)
     }, [selectedPath])
@@ -27,7 +27,7 @@ export const PlanSelection = () => {
                     <Button
                         variant={"outline"}
                         key={plan.name}
-                        className={`${selectedOption === plan.route ? 'w-full h-full self-center rounded-none border-none max-sm:scale-110 sm:-translate-y-5 duration-500 transition-transform rounded-t-md bg-accent text-accent-foreground' : 'flex justify-center w-full h-full self-center rounded-none border-none'} `}
+                        className={`${selectedOption === plan.route ? 'w-full h-full self-center rounded-none border-none max-sm:scale-110 sm:-translate-y-5 duration-500 transition-transform rounded-t-md bg-[#CFC0FF] text-accent-foreground hover:bg-[#CFC0FF]' : 'flex duration-0 justify-center w-full h-full self-center rounded-none border-none bg-transparent hover:bg-[]'} `}
                         onClick={() => {
                             setSelectedOption(plan.route)
                             navigate(`/price/${plan.route}`)

@@ -9,7 +9,7 @@ export const NavigationBar = () => {
 
 
     return (<>
-        <main className="h-[80px] sm:h-[110px] bg-violet-600">
+        <main className="h-[80px] sm:h-[110px] bg-[#AD93FF] shadow-2xl">
             <section className="flex h-full w-full p-5 xl:justify-evenly sm:justify-between">
                 <div className="self-center">
                     <img src='https://th.bing.com/th/id/R.26f917f11670decde7eb10ed9293a3a2?rik=9xV9E9hk0EsiLg&pid=ImgRaw&r=0' alt="Company Logo" width={150} height={150} />

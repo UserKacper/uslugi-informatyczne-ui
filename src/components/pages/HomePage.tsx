@@ -1,13 +1,17 @@
 import { Outlet } from "react-router-dom"
 
+
+
 const HomePage = () => {
     return (<>
         <Outlet />
         <main className="flex flex-col md:grid md:grid-cols-2 h-screen">
-            <section className="flex justify-center h-full bg-purple-400">
+            <section className="flex justify-center h-full ">
                 <div className="self-center p-10 md:p-8">
-                    <h1 className="pb-10 font-bold text-2xl">Usługi Programistyczne</h1>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus minus eaque labore adipisci rerum eius nisi iure ratione maiores? Labore, voluptatum sit. Hic labore reprehenderit corrupti maiores est autem sit!
+                    <h1 className="pb-10 font-extrabold text-2xl">Usługi Programistyczne</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus minus eaque labore adipisci rerum eius nisi iure ratione maiores? Labore, voluptatum sit. Hic labore reprehenderit corrupti maiores est autem sit!
+                    </p>
                 </div>
             </section>
             <section className="flex justify-center h-full bg-transparent">
