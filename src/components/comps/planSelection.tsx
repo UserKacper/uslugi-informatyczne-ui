@@ -7,14 +7,13 @@ export const PlanSelection = () => {
     const [selectedOption, setSelectedOption] = useState<null | string>()
     const navigate = useNavigate();
     const plans = [
-        { name: 'Smart Home', id: 0, route: "smarthome" },
-        { name: 'Strony Statyczne', id: 1, route: "static" },
-        { name: 'Strony Dynamiczne', id: 3, route: "dynamic" },
+        { name: 'Aplikacja internetowa', id: 0, route: "webapp" },
+        { name: 'Strona internetowa', id: 1, route: "webpage" },
+        { name: 'Aplikacja mobilna', id: 3, route: "mobile" },
         { name: 'Oprogramowanie', id: 2, route: "software" }
     ]
 
     const selectedPath = useParams()
-
 
     useEffect(() => {
         setSelectedOption(selectedPath.plan)
@@ -27,7 +26,7 @@ export const PlanSelection = () => {
                     <Button
                         variant={"outline"}
                         key={plan.name}
-                        className={`${selectedOption === plan.route ? 'w-full h-full self-center rounded-none border-none max-sm:scale-110 sm:-translate-y-5 duration-500 transition-transform rounded-t-md bg-[#CFC0FF] text-accent-foreground hover:bg-[#CFC0FF]' : 'flex duration-0 justify-center w-full h-full self-center rounded-none border-none bg-transparent hover:bg-[]'} `}
+                        className={`${selectedOption === plan.route ? 'w-full h-full self-center rounded-none border-none max-sm:scale-110 sm:-translate-y-5 duration-500 transition-transform rounded-t-xl bg-[#CFC0FF] text-accent-foreground hover:bg-[#CFC0FF]' : 'flex duration-0 justify-center w-full h-full self-center rounded-none border-none bg-transparent hover:bg-[]'} `}
                         onClick={() => {
                             setSelectedOption(plan.route)
                             navigate(`/price/${plan.route}`)

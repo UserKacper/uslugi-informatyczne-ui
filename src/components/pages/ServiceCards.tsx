@@ -21,7 +21,7 @@ export const ServiceCard = () => {
     const selectedPath = useParams()
     useEffect(() => {
         const fetchData = async () => {
-            const { data } = await axios.get(`http://localhost:5207/api/${selectedPath.plan}`)
+            const { data } = await axios.get(`http://localhost:5001/api/${selectedPath.plan}`)
             setData(data)
         }
         fetchData()

@@ -16,7 +16,7 @@ const HomePage = () => {
             </section>
             <section className="flex justify-center h-full bg-transparent">
                 <div className="self-center">
-                    <img src={""} alt="3d image" width={200} height={200} />
+                    <img src={"/src/assets/software-engineer.png"} alt="3d image" width={650} height={650} />
                 </div>
             </section>
         </main>
