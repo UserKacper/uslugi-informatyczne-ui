@@ -1,20 +1,28 @@
-
+import {
+  InstagramLogoIcon,
+  GitHubLogoIcon,
+  DiscordLogoIcon,
+  LinkedInLogoIcon,
+} from "@radix-ui/react-icons";
 
 const Footer = () => {
-    return (
-        <div className='w-full flex flex-col justify-center bg-accent'>
-            <div className="w-full">
-                <span></span>
-            </div>
-            <div className="flex w-full justify-end gap-x-6 sm:flex-col gap-y-5 p-2 text-xs font-bold" id="icons">
-                <span>FB</span>
-                <span>IG</span>
-                <span>X</span>
-                <span>TT</span>
-                <span>SC</span>
-            </div>
-        </div>
-    )
-}
+  const socialLinks = [
+    { label: "Github", icon: GitHubLogoIcon },
+    { label: "Instagram", icon: InstagramLogoIcon },
+    { label: "Discord", icon: DiscordLogoIcon },
+    { label: "Linkedin", icon: LinkedInLogoIcon },
+  ];
 
-export default Footer
+
+  return (
+    <div className="w-full h-[250px] bg-gradient-to-r from-[#CFC0FF] via-[#AD93FF] to-[#CFC0FF] shadow-xl">
+      <div>
+        {socialLinks.map((e) => (<div className="">
+          <e.icon/>
+        </div>))}
+      </div>
+    </div>
+  );
+};
+
+export default Footer;

@@ -25,10 +25,10 @@ export const NavigationBar = () => {
                 </div>
             </section>
         </main>
-        {isToggled && <div className="flex justify-center flex-col sm:hidden bg-violet-600">
-            <Button variant={"ghost"} className="hover:bg-violet-700" onClick={() => window.location.assign('/')}>O nas</Button>
-            <Button variant={"ghost"} className="hover:bg-violet-700" onClick={() => window.location.assign('/price/smart')}>Cennik</Button>
-            <Button variant={"ghost"} className="hover:bg-violet-700" onClick={() => window.location.assign('/contact')}>Kontakt</Button>
+        {isToggled && <div className="flex justify-center flex-col sm:hidden bg-[#CFC0FF]">
+            <Button variant={"ghost"} className="hover:bg-[#AD93FF]" onClick={() => window.location.assign('/')}>O nas</Button>
+            <Button variant={"ghost"} className="hover:bg-[#AD93FF]" onClick={() => window.location.assign('/price/smart')}>Cennik</Button>
+            <Button variant={"ghost"} className="hover:bg-[#AD93FF]" onClick={() => window.location.assign('/contact')}>Kontakt</Button>
         </div>}
         <Outlet />
     </>)
