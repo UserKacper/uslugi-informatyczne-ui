@@ -4,11 +4,11 @@ import { faFacebook, faInstagram, faLinkedin, faTiktok, faTwitch, faXTwitter, fa
 const Footer = () => {
 
   return (
-    <footer>
+    <footer className='w-full flex flex-col'>
       <div className="w-full h-[70px] md:h-[60px] bg-[#AD93FF] shadow-xl">
         <div className="flex h-full pl-12 md:justify-between justify-center gap-y-3 max-md:flex-col">
           <span className="self-center">
-            <p className="text-white font-semibold text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit:</p>
+            <p className="text-white font-semibold text-sm">Nawiąż z nami kontakt:</p>
           </span>
           <span className="self-center pr-12 flex gap-5">
             <FontAwesomeIcon icon={faFacebook} className='text-white' />
@@ -24,52 +24,51 @@ const Footer = () => {
       <div className="w-full bg-[#434455]">
         <div className='flex w-full text-white font-semibold md:justify-between max-lg:flex-col'>
 
-
           <section className='w-full lg:p-12 text-center'>
-            <h1>Company</h1>
-            <div className='font-light my-2 w-full pl-3 lg:text-start'>Lorem, ipsum dolor sit amet coinsectetur adipisicing elit.
-              <br />Animi deleniti provident repellendus explicabo.</div>
+            <h1>O nas</h1>
+            <div className='font-light my-2 w-full pl-3 lg:text-start'>
+              Jesteśmy firmą zajmującą się tworzeniem oprogramowania i stron internetowych dla naszych klientów. Dbamy o najwyższą jakość i zadowolenie naszych klientów.
+            </div>
           </section>
 
-
           <section className='w-full lg:p-12 text-center'>
-            <h1>Company</h1>
+            <h1>Nasze usługi</h1>
             <div className='pl-3 my-2 font-thin max-lg:gap-2'>
-              <p className=''>Lorem ipsum</p>
-              <p className=''>Lorem ipsum</p>
-              <p className=''>Lorem ipsum</p>
-              <p className=''>Lorem ipsum</p>
+              <p>Tworzenie stron internetowych</p>
+              <p>Rozwój aplikacji mobilnych</p>
+              <p>Projektowanie UX/UI</p>
+              <p>Konsultacje IT</p>
             </div>
           </section>
 
-
           <section className='w-full lg:p-12 text-center'>
-            <h1>Linki</h1>
+            <h1>Przydatne linki</h1>
             <div className='flex flex-col pl-3 my-2 font-thin max-lg:gap-2 w-full'>
-              <a href="/">lorem ipsum</a>
-              <a href="/">lorem ipsum</a>
-              <a href="/">lorem ipsum</a>
-              <a href="/">lorem ipsum</a>
+              <a href="/about">O nas</a>
+              <a href="/services">Nasze usługi</a>
+              <a href="/contact">Kontakt</a>
+              <a href="/blog">Blog</a>
             </div>
           </section>
-
 
           <section className='w-full lg:p-12 text-center'>
-            <h1>Linki</h1>
+            <h1>Polityka</h1>
             <div className='flex flex-col pl-3 my-2 font-thin max-lg:gap-2'>
-              <a href="/">lorem ipsum</a>
-              <a href="/">lorem ipsum</a>
-              <a href="/">lorem ipsum</a>
-              <a href="/">lorem ipsum</a>
+              <a href="/privacy">Polityka prywatności</a>
+              <a href="/terms">Regulamin</a>
+              <a href="/cookies">Polityka cookies</a>
+              <a href="/disclaimer">Zastrzeżenia prawne</a>
             </div>
           </section>
-
 
         </div>
       </div>
-      <div className="w-full h-[50px] bg-[#2d2e3d]">
+      <div className="w-full h-[50px] bg-[#2d2e3d] flex justify-center">
+        <span className='self-center text-white font-light'>
+          <p>© 2024 Copyright: YourCompany.com</p>
+        </span>
       </div>
-    </footer >
+    </footer>
   );
 };
 
