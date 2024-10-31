@@ -10,6 +10,9 @@ const config = {
   ],
   prefix: "",
   theme: {
+    listStyleType: {
+      roman: 'upper-roman',
+    },
     container: {
       center: true,
       padding: "2rem",

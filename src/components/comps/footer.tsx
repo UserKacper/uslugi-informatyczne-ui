@@ -27,7 +27,7 @@ const Footer = () => {
           <section className='w-full lg:p-12 text-center'>
             <h1>O nas</h1>
             <div className='font-light my-2 w-full pl-3 lg:text-start'>
-              Jesteśmy firmą zajmującą się tworzeniem oprogramowania i stron internetowych dla naszych klientów. Dbamy o najwyższą jakość i zadowolenie naszych klientów.
+              Jesteśmy firmą zajmującą się tworzeniem oprogramowania i stron internetowych dla naszych klientów. <br className='lg:hidden' />Dbamy o najwyższą jakość i zadowolenie naszych klientów.
             </div>
           </section>
 
