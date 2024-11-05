@@ -17,7 +17,7 @@ export const NavigationBar = () => {
                 <div className="self-center hidden sm:flex gap-3">
                     <Button variant={"ghost"} className='text-sm tracking-tight ' onClick={() => window.location.assign('/')
                     }>O nas</Button>
-                    <Button variant={"ghost"} className='text-sm tracking-tight' onClick={() => window.location.assign('/price/smarthome')}>Cennik</Button>
+                    <Button variant={"ghost"} className='text-sm tracking-tight' onClick={() => window.location.assign('/price')}>Cennik</Button>
                     <Button variant={"ghost"} className='text-sm tracking-tight' onClick={() => window.location.assign('/contact')}>Kontakt</Button>
                 </div>
                 <div className="self-center flex justify-end w-full sm:hidden">
@@ -27,7 +27,7 @@ export const NavigationBar = () => {
         </main>
         {isToggled && <div className="flex justify-center flex-col sm:hidden bg-[#CFC0FF]">
             <Button variant={"ghost"} className="hover:bg-[#AD93FF]" onClick={() => window.location.assign('/')}>O nas</Button>
-            <Button variant={"ghost"} className="hover:bg-[#AD93FF]" onClick={() => window.location.assign('/price/smart')}>Cennik</Button>
+            <Button variant={"ghost"} className="hover:bg-[#AD93FF]" onClick={() => window.location.assign('/price')}>Cennik</Button>
             <Button variant={"ghost"} className="hover:bg-[#AD93FF]" onClick={() => window.location.assign('/contact')}>Kontakt</Button>
         </div>}
         <Outlet />

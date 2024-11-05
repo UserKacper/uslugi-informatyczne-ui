@@ -12,12 +12,13 @@ export const PlanSelection = () => {
         { name: 'Aplikacja mobilna', id: 3, route: "mobile" },
         { name: 'Oprogramowanie', id: 2, route: "software" }
     ]
-
+    const redirect = useNavigate()
     const selectedPath = useParams()
 
     useEffect(() => {
-        setSelectedOption(selectedPath.plan)
-    }, [selectedPath])
+        if (!selectedPath.plan) redirect('/price/webapp')
+        else if (selectedPath) setSelectedOption(selectedPath.plan)
+    }, [redirect, selectedOption, selectedPath])
 
     return (<>
         <section className='w-full sm:h-[100px] bg-[#CFC0FF]'>

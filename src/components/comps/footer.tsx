@@ -44,8 +44,8 @@ const Footer = () => {
           <section className='w-full lg:p-12 text-center'>
             <h1>Przydatne linki</h1>
             <div className='flex flex-col pl-3 my-2 font-thin max-lg:gap-2 w-full'>
-              <a href="/about">O nas</a>
-              <a href="/services">Nasze usługi</a>
+              <a href="/">O nas</a>
+              <a href="/price">Nasze usługi</a>
               <a href="/contact">Kontakt</a>
               <a href="/blog">Blog</a>
             </div>
