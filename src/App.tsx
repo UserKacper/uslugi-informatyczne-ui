@@ -9,33 +9,38 @@ import { TermsPage } from "./components/pages/TermsPage";
 import ErrorPage from "./components/pages/ErrorPage";
 
 export default function App() {
+  const definedPaths = [
+    { path: "/", element: <HomePage /> },
+    { path: "contact", element: <Contact /> },
+    { path: "terms", element: <TermsPage /> },
+    { path: "privacy", element: <PrivacyPolicy /> },
+    {
+      path: "price",
+      element: <PlanSelection />,
+      children: [
+        { path: ":plan", element: <ServiceCard /> },
+      ],
+    },
+    { path: "*", element: <ErrorPage /> },
+  ];
 
-  const definedPaths =
-    [
-      {
-        path: "/",
-        element: <NavigationBar />
-      },
-      {
-
-      }
-    ]
-}
-
-return (
-  <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<NavigationBar />}>
-        <Route path="/" element={<HomePage />} />
-        <Route path="contact" element={<Contact />} />
-        <Route path="terms" element={<TermsPage />} />
-        <Route path="privacy" element={<PrivacyPolicy />} />
-        <Route path="price" element={<PlanSelection />}>
-          <Route path="/price/:plan" element={<ServiceCard />} />
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<NavigationBar />}>
+          {definedPaths.map((route, index) =>
+            route.children ? (
+              <Route key={index} path={route.path} element={route.element}>
+                {route.children.map((child, childIndex) => (
+                  <Route key={childIndex} path={child.path} element={child.element} />
+                ))}
+              </Route>
+            ) : (
+              <Route key={index} path={route.path} element={route.element} />
+            )
+          )}
         </Route>
-        <Route path="error" element={<ErrorPage />} />
-      </Route>
-    </Routes >
-  </BrowserRouter >
-);
+      </Routes>
+    </BrowserRouter>
+  );
 }

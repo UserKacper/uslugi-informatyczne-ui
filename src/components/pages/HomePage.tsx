@@ -1,16 +1,16 @@
-import { Outlet } from "react-router-dom"
-
-
 
 const HomePage = () => {
     return (<>
-        <Outlet />
         <main className="flex flex-col md:grid md:grid-cols-2 h-screen">
             <section className="flex justify-center h-full ">
                 <div className="self-center p-10 md:p-8">
-                    <h1 className="pb-10 font-extrabold text-2xl">Usługi Programistyczne</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus minus eaque labore adipisci rerum eius nisi iure ratione maiores? Labore, voluptatum sit. Hic labore reprehenderit corrupti maiores est autem sit!
+                    <h1 className="pb-10 font-extrabold text-2xl max-md:text-center">Usługi Programistyczne</h1>
+                    <p className="max-md:text-center">
+                        Oferujemy kompleksowe usługi programistyczne, dostosowane do indywidualnych potrzeb klienta.
+                        Nasz zespół specjalizuje się w tworzeniu nowoczesnych aplikacji webowych i mobilnych,
+                        automatyzacji procesów biznesowych oraz integracji z zewnętrznymi systemami.
+                        Zapewniamy profesjonalne podejście, pełne wsparcie techniczne oraz elastyczność
+                        w realizacji projektów – od fazy koncepcyjnej aż po wdrożenie i utrzymanie.
                     </p>
                 </div>
             </section>
