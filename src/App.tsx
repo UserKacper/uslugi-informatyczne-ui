@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./components/pages/HomePage";
 import { NavigationBar } from "./components/comps/navigationbar";
 import { PlanSelection } from "./components/comps/planSelection";
-import { ServiceCard } from "./components/pages/ServiceCards";
+import { ServiceCard } from "./components/comps/ServiceCards";
 import Contact from "./components/pages/ContactPage";
 import PrivacyPolicy from "./components/pages/PolicyPrivacyPage";
 import { TermsPage } from "./components/pages/TermsPage";
