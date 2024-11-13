@@ -1,8 +1,8 @@
 
 const HomePage = () => {
     return (<>
-        <main className="flex flex-col md:grid md:grid-cols-2 h-screen">
-            <section className="flex justify-center h-full ">
+        <main className="flex flex-col md:grid md:grid-cols-2">
+            <section className="flex justify-center h-full">
                 <div className="self-center p-10 md:p-8">
                     <h1 className="pb-10 font-extrabold text-2xl max-md:text-center">Usługi Programistyczne</h1>
                     <p className="max-md:text-center">

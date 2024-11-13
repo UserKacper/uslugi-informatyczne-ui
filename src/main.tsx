@@ -12,8 +12,10 @@ const queryClient = new QueryClient()
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
-      <App />
-      <Footer />
+      <div className='min-h-[100vh] grid grid-rows-[auto_1fr_auto]'>
+        <App />
+        <Footer />
+      </div>
     </QueryClientProvider>
   </React.StrictMode>,
 )

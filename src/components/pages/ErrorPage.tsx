@@ -1,6 +1,6 @@
 const ErrorPage = () => {
     return (
-        <main className="h-screen">
+        <main>
             <div className="flex justify-center self-center h-full">
                 <p className="flex self-center">
                     404 Error - Page not found

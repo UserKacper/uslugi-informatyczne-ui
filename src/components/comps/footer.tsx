@@ -22,18 +22,21 @@ const Footer = () => {
         </div>
       </div>
       <div className="w-full bg-[#434455]">
-        <div className='flex w-full text-white font-semibold md:justify-between max-lg:flex-col'>
-
-          <section className='w-full lg:p-12 text-center'>
+        <div className='flex w-full text-white font-semibold md:justify-between max-lg:flex-col p-12 gap-10 max-lg:text-center'>
+          <section className='w-full'>
             <h1>O nas</h1>
-            <div className='font-light my-2 w-full pl-3 lg:text-start'>
-              Jesteśmy firmą zajmującą się tworzeniem oprogramowania i stron internetowych dla naszych klientów. <br className='lg:hidden' />Dbamy o najwyższą jakość i zadowolenie naszych klientów.
+            <div className='font-light my-2 w-full lg:text-start'>
+              Jesteśmy firmą zajmującą się tworzeniem oprogramowania i stron internetowych dla naszych klientów. <br className="max-lg:hidden" />Dbamy o najwyższą jakość i zadowolenie naszych klientów.
             </div>
           </section>
 
-          <section className='w-full lg:p-12 text-center'>
+          <div className='flex justify-center'>
+            <hr className='lg:hidden w-1/2' />
+          </div>
+
+          <section className='w-full'>
             <h1>Nasze usługi</h1>
-            <div className='pl-3 my-2 font-thin max-lg:gap-2'>
+            <div className=' my-2 font-thin max-lg:gap-2'>
               <p>Tworzenie stron internetowych</p>
               <p>Rozwój aplikacji mobilnych</p>
               <p>Projektowanie UX/UI</p>
@@ -41,9 +44,13 @@ const Footer = () => {
             </div>
           </section>
 
-          <section className='w-full lg:p-12 text-center'>
+          <div className='flex justify-center'>
+            <hr className='lg:hidden w-1/2' />
+          </div>
+
+          <section className='w-full'>
             <h1>Przydatne linki</h1>
-            <div className='flex flex-col pl-3 my-2 font-thin max-lg:gap-2 w-full'>
+            <div className='flex flex-col my-2 font-thin max-lg:gap-2 w-full'>
               <a href="/">O nas</a>
               <a href="/price">Nasze usługi</a>
               <a href="/contact">Kontakt</a>
@@ -51,16 +58,19 @@ const Footer = () => {
             </div>
           </section>
 
-          <section className='w-full lg:p-12 text-center'>
+          <div className='flex justify-center'>
+            <hr className='lg:hidden w-1/2' />
+          </div>
+
+          <section className='w-full'>
             <h1>Polityka</h1>
-            <div className='flex flex-col pl-3 my-2 font-thin max-lg:gap-2'>
+            <div className='flex flex-col my-2 font-thin max-lg:gap-2'>
               <a href="/privacy">Polityka prywatności</a>
               <a href="/terms">Regulamin</a>
               <a href="/cookies">Polityka cookies</a>
               <a href="/disclaimer">Zastrzeżenia prawne</a>
             </div>
           </section>
-
         </div>
       </div>
       <div className="w-full h-[50px] bg-[#2d2e3d] flex justify-center">
